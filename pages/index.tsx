@@ -8,9 +8,11 @@ const Home: NextPage = () => {
   return (
     <Layout>
       <Head>
-        <title>Hawonn Joh</title>
+        <title>main</title>
       </Head>
-      <PostCard />
+      <Link href="/about">
+        <a>About</a>
+      </Link>
     </Layout>
   );
 };

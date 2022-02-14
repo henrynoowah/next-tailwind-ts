@@ -4,7 +4,7 @@ import { FC } from "react";
 
 const PostCard: FC = () => {
   return (
-    <div className="w-[60%]">
+    <section className="w-[60%]">
       <div className="flex justify-center mtb-4">
         <div className="h-[144px] w-[144px] rounded-full overflow-hidden shadow-lg my-[50px]">
           <Image
@@ -39,12 +39,24 @@ const PostCard: FC = () => {
         </p>
       </div>
 
-      <h2 className="text-center">
-        <Link href="/">
-          <a className="text-2xl font-medium hover:underline">Back to home</a>
-        </Link>
-      </h2>
-    </div>
+      <p className="text-center mb-4">
+        (This is a sample website - you’ll be building a site like this on{" "}
+        <a className="text-indigo-400" href="https://nextjs.org/learn">
+          our Next.js tutorial
+        </a>
+        .)
+      </p>
+
+      <div className="flex justify-center">
+        <h2 className="text-center">
+          <Link href="/" passHref>
+            <button className="text-2xl text-white rounded-md font-medium hover:underline bg-indigo-400 px-[30px] py-[10px]">
+              Back to home
+            </button>
+          </Link>
+        </h2>
+      </div>
+    </section>
   );
 };
 

@@ -2,7 +2,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { FC } from "react";
 
-const PostCard: FC = () => {
+const AboutMe: FC = () => {
   return (
     <section className="w-[60%]">
       <div className="flex justify-center mtb-4">
@@ -60,4 +60,4 @@ const PostCard: FC = () => {
   );
 };
 
-export default PostCard;
+export default AboutMe;

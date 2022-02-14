@@ -1,16 +1,17 @@
 import Layout from "@/components/common/Layout";
-import PostCard from "@/components/posts/PostCard";
+import AboutMe from "@/components/posts/AboutMe";
+import PostCard from "@/components/posts/AboutMe";
 import { NextPage } from "next";
 import Head from "next/head";
 
 const index: NextPage = () => {
   return (
-    <Layout>
+    <div className="w-[100%] flex justify-center">
       <Head>
         <title>Hawonn Joh</title>
       </Head>
-      <PostCard />
-    </Layout>
+      <AboutMe />
+    </div>
   );
 };
 

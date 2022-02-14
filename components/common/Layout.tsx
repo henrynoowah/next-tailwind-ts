@@ -5,7 +5,11 @@ interface IProps {
 }
 
 const Layout: FC<IProps> = ({ children }) => {
-  return <div className="w-[100%] flex justify-center">{children}</div>;
+  return (
+    <div className="w-[100%] flex-col items-center justify-center">
+      {children}
+    </div>
+  );
 };
 
 export default Layout;

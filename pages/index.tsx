@@ -1,4 +1,4 @@
-import Date from "@/components/common/date";
+import Date from "@/components/common/Date";
 import Layout from "@/components/common/Layout";
 import { getSortedPostsData } from "lib/posts";
 import type { GetStaticProps, NextPage } from "next";

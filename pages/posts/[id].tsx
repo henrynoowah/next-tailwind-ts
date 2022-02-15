@@ -28,7 +28,6 @@ export default Post;
 
 export const getStaticPaths = async () => {
   const paths = getAllPostIds();
-  console.log(paths);
   return {
     paths,
     fallback: false,

@@ -27,13 +27,16 @@ const Home: NextPage<IProps> = ({ allPostsData }) => {
               </Link>
             </li>
             {allPostsData.map(({ id, date, title }) => (
-              <li key={id} className="my-[10px]">
-                {title}
-                <br />
-                {id}
-                <br />
-                {date}
-              </li>
+              <Link href={`/posts/${id}`} passHref key={id}>
+                <li className="my-[10px] cursor-pointer">
+                  {title}
+                  <br />
+                  {id}
+                  <br />
+                  {date}
+                  <hr />
+                </li>
+              </Link>
             ))}
           </ul>
         </section>

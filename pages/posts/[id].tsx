@@ -1,4 +1,4 @@
-import Date from "@/components/common/date";
+import Date from "@/components/common/Date";
 import Layout from "@/components/common/Layout";
 import { getAllPostIds, getPostData } from "lib/posts";
 import { NextPage } from "next";

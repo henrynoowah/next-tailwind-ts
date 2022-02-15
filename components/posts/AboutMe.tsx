@@ -7,7 +7,7 @@ const AboutMe: FC = () => {
   return (
     <Layout>
       <section>
-        <p className="mt-[50px]">
+        <p>
           This is About Me page. Lorem ipsum dolor sit amet consectetur
           adipisicing elit. Iure eos magni cum aliquid soluta fugiat tempore
           blanditiis? Molestiae sit vitae error quia provident, voluptate odit

@@ -1,3 +1,4 @@
+import Date from "@/components/common/date";
 import Layout from "@/components/common/Layout";
 import { getSortedPostsData } from "lib/posts";
 import type { GetStaticProps, NextPage } from "next";
@@ -20,23 +21,37 @@ const Home: NextPage<IProps> = ({ allPostsData }) => {
       </Head>
       <Layout home>
         <section>
+          <p className="text-center my-[20px]">
+            This is a sample website - you’ll be building a site like this on
+            our <br />
+            <a
+              className="text-indigo-400 hover:underline"
+              href="https://nextjs.org/learn"
+            >
+              Next.js tutorial
+            </a>
+          </p>
           <ul>
             <li>
               <Link href="/about">
                 <a>About Me</a>
               </Link>
+              <small className="text-gray-400">
+                <p>.</p>
+              </small>
+              <hr />
             </li>
             {allPostsData.map(({ id, date, title }) => (
-              <Link href={`/posts/${id}`} passHref key={id}>
-                <li className="my-[10px] cursor-pointer">
-                  {title}
-                  <br />
-                  {id}
-                  <br />
-                  {date}
-                  <hr />
-                </li>
-              </Link>
+              <li className="my-[10px] cursor-pointer" key={id}>
+                <Link href={`/posts/${id}`}>
+                  <a>{title}</a>
+                </Link>
+                <br />
+                <small className="text-gray-400">
+                  <Date dateString={date} />
+                </small>
+                <hr />
+              </li>
             ))}
           </ul>
         </section>

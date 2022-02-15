@@ -16,7 +16,7 @@ const Layout: FC<IProps> = ({ children, home }) => {
         />
       </Head>
 
-      <div className="flex justify-center">
+      <div className="flex justify-center mt-[50px]">
         <div className="w-[60%] flex-col justify-center">
           {children}
           {!home && (

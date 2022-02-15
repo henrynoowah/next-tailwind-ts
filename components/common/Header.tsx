@@ -15,15 +15,6 @@ const Header: FC = () => {
         </div>
       </div>
       <h1 className="text-3xl font-bold text-center">Hawoon Joh</h1>
-      <p className="text-center my-[20px]">
-        This is a sample website - you’ll be building a site like this on{" "}
-        <a
-          className="text-indigo-400 hover:underline"
-          href="https://nextjs.org/learn"
-        >
-          our Next.js tutorial
-        </a>
-      </p>
     </>
   );
 };
